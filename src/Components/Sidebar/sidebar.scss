@@ -26,6 +26,35 @@
         padding-left: 10px;
         ul{
             list-style: none;
+            .title{
+                font-size: 10px;
+                text-transform: uppercase;
+                color: #999;
+                margin: 10px 0px;
+                user-select: none;
+                -webkit-user-drag: none;
+
+            }
+            li{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding:5px;
+                &:hover{
+                    cursor: pointer;
+                    background-color: #ece8ff;
+                }
+                .icon{
+                    color: #7451f8;
+                    font-size: 18px;
+                }
+                span{
+                    font-size: 14px;
+                    margin-left: 7px;
+                    color: #888;
+                }
+            }
+
         }
     }
 

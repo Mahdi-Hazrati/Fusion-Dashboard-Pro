@@ -9,11 +9,11 @@ import
     ExitToApp,
     AccountCircle,
     Settings,
-    Psychology,
     SettingsSystemDaydream,
     NotificationsNone,
     InsertChart,
-    LocalShipping
+    LocalShipping,
+    Info
 } from "@mui/icons-material"
 
 
@@ -26,53 +26,58 @@ const Sidebar = () => {
             </div>
             <hr />
             <div className="center">
-                <ul className="menu">
+                <ul>
+                    <p className="title">main</p>
                     <li>
-                        <Menu />
+                        <Menu className="icon"/>
                         <span>Dashboard</span>
                     </li>
+                    <p className="title">list</p>
                     <li>
-                        <Group />
+                        <Group className="icon"/>
                         <span>Users</span>
                     </li>
                     <li>
-                        <Store />
+                        <Store className="icon"/>
                         <span>Products</span>
                     </li>
                     <li>
-                        <CreditCard />
+                        <CreditCard className="icon"/>
                         <span>Orders</span>
                     </li>
                     <li>
-                        <LocalShipping />
+                        <LocalShipping className="icon"/>
                         <span>Delivery</span>
                     </li>
+                    <p className="title">usefull</p>
                     <li>
-                        <InsertChart />
+                        <InsertChart className="icon"/>
                         <span>Stats</span>
                     </li>
                     <li>
-                        <NotificationsNone />
+                        <NotificationsNone className="icon"/>
                         <span>Notification</span>
                     </li>
+                    <p className="title">service</p>
                     <li>
-                        <SettingsSystemDaydream />
-                        <span>System Health</span>
+                        <SettingsSystemDaydream className="icon"/>
+                        <span>Sys Health</span>
                     </li>
                     <li>
-                        <Psychology />
+                        <Info className="icon"/>
                         <span>Logs</span>
                     </li>
                     <li>
-                        <Settings />
+                        <Settings className="icon"/>
                         <span>Setting</span>
                     </li>
+                    <p className="title">user</p>
                     <li>
-                        <AccountCircle />
+                        <AccountCircle className="icon"/>
                         <span>Profile</span>
                     </li>
                     <li>
-                        <ExitToApp />
+                        <ExitToApp className="icon"/>
                         <span>Logout</span>
                     </li>
                 </ul>
