@@ -1,11 +1,15 @@
 import "./sidebar.scss"
+import {Dashboard} from "@mui/icons-material"
 
-const Sidebar = ()=>{
-    return(
+
+const Sidebar = () => {
+    return (
         <div className="sidebar">
             <div className="top">
-                <span className="logo">Fusion Dashboard Pro</span>
+                    <Dashboard />
+                <span className="logo">F.D Pro</span>
             </div>
+            <hr />
             <div className="center">
                 <ul className="menu">
                     <li><span>Dashboard</span></li>

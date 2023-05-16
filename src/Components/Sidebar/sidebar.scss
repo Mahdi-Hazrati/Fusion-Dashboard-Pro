@@ -1,4 +1,33 @@
 .sidebar{
-    background-color: crimson;
     flex: 1;
+    min-height: 100vh;
+    border-right: 0.5px solid rgb(230, 227, 227);
+    background-color: white;
+    .top{
+        display: flex;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        gap:10px;
+        color: #6429ff;
+        font-size: 20px;
+        font-weight: bold;
+        user-select: none;
+        -webkit-user-drag: none;
+    
+    }
+    hr{
+        outline: none;
+        height: 0;
+        border: 0.5px solid rgb(230, 227, 227);
+    }
+
+    .center{
+        background-color: coral;
+        padding-left: 10px;
+        ul{
+            list-style: none;
+        }
+    }
+
 }
