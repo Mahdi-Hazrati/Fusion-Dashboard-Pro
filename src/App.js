@@ -1,6 +1,6 @@
 function App() {
   return (
-    <div className="App">Fusion Dashboard Pro - inital</div>
+    <div className="app">Fusion Dashboard Pro</div>
   );
 }
 
