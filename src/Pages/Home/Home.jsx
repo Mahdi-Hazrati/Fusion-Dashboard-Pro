@@ -11,9 +11,10 @@ const Home = () => {
             <div className="homeContainer">
                 <Navbar />
                 <div className="widgets">
-                    <Widget />
-                    <Widget />
-                    <Widget />
+                    <Widget type="user" value="32.000" percentage="120%"/>
+                    <Widget type="order" value="521" percentage="40%"/>
+                    <Widget type="earning" value="24.000" percentage="80%"/>
+                    <Widget type="balance" value="125.000" percentage="15%"/>
                 </div>
             </div>
         </div>
