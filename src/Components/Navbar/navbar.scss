@@ -24,6 +24,8 @@
                 margin-right: 4px;
                 &::placeholder{
                     font-size: 12px;
+                    user-select: none;
+                    -webkit-user-drag: none;
                 }
             }
             .icon{
@@ -39,6 +41,7 @@
                 justify-content: center;
                 margin-right: 20px;
                 user-select: none;
+                position: relative;
                 &:hover{
                     cursor: pointer;
                 }
@@ -57,6 +60,23 @@
                     &:hover{
                         cursor: pointer;
                     }
+                }
+                .notif-counter{
+                    width: 15px;
+                    height: 15px;
+                    background-color: crimson;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 10px;
+                    border-radius: 50%;
+                    font-family: inherit;
+                    font-weight: bold;
+                    position: absolute;
+                    top: -5px;
+                    right: 0px;
+
                 }
             }
             
