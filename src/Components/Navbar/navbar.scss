@@ -38,6 +38,7 @@
                 align-items: center;
                 justify-content: center;
                 margin-right: 20px;
+                user-select: none;
                 &:hover{
                     cursor: pointer;
                 }
@@ -45,6 +46,17 @@
                     font-size: 20px;
                     margin-right: 5px;
 
+                }
+                .avatar{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    user-select: none;
+                    -webkit-user-drag: none;
+                    &:hover{
+                        cursor: pointer;
+                    }
                 }
             }
             

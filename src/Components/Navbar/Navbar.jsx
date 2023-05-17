@@ -11,8 +11,9 @@ import
 } 
 
 from "@mui/icons-material"
-
+import avatar from "../../Assets/Images/Avatar.jpg"
 import "./navbar.scss"
+
 const Navbar = ()=>{
     return (
         <div className="navbar">
@@ -40,6 +41,9 @@ const Navbar = ()=>{
                     </div>
                     <div className="item">
                         <ListOutlined className="icon"/>
+                    </div>
+                    <div className="item">
+                       <img src={avatar} alt="fdp-avatar" className="avatar"/>
                     </div>
                 </div>
             </div>
