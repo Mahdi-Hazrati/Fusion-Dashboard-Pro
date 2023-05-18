@@ -24,7 +24,7 @@ const Sidebar = () => {
                     <Dashboard />
                 <span className="logo">F.D Pro</span>
             </div>
-            <hr />
+            {/* <hr /> */}
             <div className="center">
                 <ul>
                     <p className="title">main</p>
