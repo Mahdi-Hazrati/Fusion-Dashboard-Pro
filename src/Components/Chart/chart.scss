@@ -3,8 +3,23 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.1);
-    height: 200px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
+    padding: 10px;
+    color: gray;
+    .title{
+        text-transform: capitalize;
+        font-size: 14px;
+        align-self: flex-start;
+        margin-bottom: 14px;
+        color: gray;
+        font-size: 14px;
+        user-select: none;
+    }
+    .chartGrid{
+        color: lightgray;
+    }
+
 }
