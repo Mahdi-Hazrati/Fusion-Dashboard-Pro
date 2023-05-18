@@ -1,11 +1,97 @@
 .featured{
-    flex: 2;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    flex: 4;
+    padding: 10px;
     border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.1);
-    height: 200px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    .top{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        user-select: none;
+        color: gray;
+        .title{
+            font-size: 16px;
+            font-weight: normal;
+            
+        }
+        .icon{
+            font-size: 24px;
+            transition: 0.2s;
+            &:hover{
+                cursor: pointer;
+                color: black;
+            }
+        }
+
+    }
+    .bottom{
+       padding: 20px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+
+       .featuredChart{
+        width: 100px;
+        height: 100px;
+       }
+       .title{
+        color: gray;
+        padding: 10px;
+        font-size: 12px;
+        
+    }
+    .amount{
+        font-size: 30px;
+        padding: 10px;
+        font-weight: bold;
+    }
+    .description{
+        color: gray;
+        font-size: 12px;
+        padding: 10px;
+        text-align: center;
+        font-weight: lighter;
+    }
+    .summery{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .item{
+            text-align: center;
+
+            .itemTitle{
+                color: gray;
+                font-size: 14px;
+                user-select: none;
+            }
+            .itemResult{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                font-size: 14px;
+                margin-top: 10px;
+                user-select: none;
+                font-weight: normal;
+                &.positive{
+                    color: forestgreen;
+                }
+                &.negative{
+                    color: crimson;
+                }
+                
+
+            }
+            
+        }
+    }
+
+    }
 
 }
