@@ -1,10 +1,17 @@
-import "./list.scss"
 import React from "react"
+import Sidebar from "../../Components/Sidebar/Sidebar"
+import Navbar from "../../Components/Navbar/Navbar"
+import DataTable from "../../Components/DataTable/DataTable"
+import "./list.scss"
 
-const List = ()=>{
-    return(
+const List = () => {
+    return (
         <div className="list">
-            <h1 className="title">List</h1>
+            <Sidebar />
+            <div className="listContainer">
+                <Navbar />
+                <DataTable />
+            </div>
         </div>
     )
 }
