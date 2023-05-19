@@ -1,3 +1,5 @@
+# Fusion Dashboard Pro
+
 ```Fusion Dashboard Pro``` is a powerful and versatile dashboard template designed with React JS and Syncfusion components.
 This template is ideal for developers who are looking to create professional and customizable dashboards for their web applications.
 
