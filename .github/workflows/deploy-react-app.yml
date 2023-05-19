@@ -1,27 +1,30 @@
-name: Deploy-React-App
-# by Mahdi Hazrati
+name: Deploy React App to GitHub Pages
+# By Mahdi Hazrati 
 on:
   push:
     branches:
-      - master # or whatever branch you want to deploy from
+      - master # this is main branch of your code
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
+      - uses: actions/checkout@v2
       - name: Install dependencies
-        run: npm ci
-
-      - name: Build app
+        run: npm install
+      - name: Build the app
         run: npm run build
-
+      - name: Configure Git
+        run: |
+          git config --global user.name "Mahdi Hazrati"
+          git config --global user.email "MahdiHazrtiMailBox@gmail.com"
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@releases/v4
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: build
+        env:
+          # Set PAT to github repository
+          PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+        run: |
+          cd build
+          git init
+          git add .
+          git commit -m "Latest Changes Of React App Deploy to GitHub Pages"
+          git push --force "https://${PERSONAL_ACCESS_TOKEN}@github.com/Mahdi-Hazrati/Fusion-Dashboard-Pro.git" master:gh-pages
