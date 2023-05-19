@@ -36,7 +36,7 @@ const Sidebar = () => {
                     <p className="title">list</p>
                     <li>
                         <Group className="icon"/>
-                        <Link to="users">Users</Link>
+                        <Link to="/users">Users</Link>
             
                     </li>
                     <li>
