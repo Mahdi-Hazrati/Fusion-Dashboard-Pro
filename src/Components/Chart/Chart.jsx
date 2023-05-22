@@ -48,11 +48,11 @@ const data = [
     },
 ];
 
-const Chart = () => {
+const Chart = ({aspect, title}) => {
     return (
         <div className="chart">
-            <div className="title">Last 6 month revenue</div>
-            <ResponsiveContainer width="100%" aspect={2/1} className="chartContainer">
+            <div className="title">{title}</div>
+            <ResponsiveContainer width="100%" aspect={aspect} className="chartContainer">
                 <AreaChart width={730} height={250} data={data}
                     margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
                     <defs>
