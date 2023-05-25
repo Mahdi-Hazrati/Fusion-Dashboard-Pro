@@ -17,7 +17,7 @@
             .left{
                 flex: 1;
                 text-align: center;
-                img{
+                img, .icon{
                     width: 100px;
                     height: 100px;
                     object-fit: cover;
@@ -25,8 +25,14 @@
                     border-radius: 50%;
                     -webkit-user-drag: none;
                     user-select: none;
-                    cursor: pointer;
+                    padding: 0px;
+                    border: none;
 
+                }
+                .icon{
+                    color: gray;
+                    border: 1px solid gray;
+                    padding: 10px;
                 }
             }
             .right{

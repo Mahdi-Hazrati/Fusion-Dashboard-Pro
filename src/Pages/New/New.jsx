@@ -1,11 +1,13 @@
-import React from "react"
+import React, {useState} from "react"
 import Sidebar from "../../Components/Sidebar/Sidebar"
 import Navbar from "../../Components/Navbar/Navbar"
 import "./new.scss"
 import noImage from "../../Assets/Images/Avatar.jpg"
-import { DriveFolderUpload } from "@mui/icons-material"
+import { DriveFolderUpload, PhotoCamera } from "@mui/icons-material"
 
 const New = ()=>{
+    const [file, setFile] = useState("")
+
     return(
         <div className="new">
             <Sidebar />
@@ -16,7 +18,17 @@ const New = ()=>{
                 </div>
                 <div className="bottom">
                     <div className="left">
-                        <img src={noImage} alt="noimage" />
+                        {
+                        file 
+                        ? 
+                        <img
+                         alt="noimage"
+                         src={URL.createObjectURL(file)}
+                         /> 
+                        :
+                        <PhotoCamera className="icon"/>
+                        }
+
                     </div>
                     <div className="right">
                         <form>
@@ -24,7 +36,12 @@ const New = ()=>{
                                 <label htmlFor="fileInput">
                                     Image <DriveFolderUpload className="icon" />
                                 </label>
-                                <input id="fileInput" type="file" style={{display:"none"}}/>
+                                <input
+                                 id="fileInput"
+                                 type="file"
+                                 style={{display:"none"}}
+                                 onChange={(event)=>{setFile(event.target.files[0])}}
+                                 />
                             </div>
                             <div className="formInput">
                                 <label>username</label>
