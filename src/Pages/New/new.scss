@@ -1,3 +1,7 @@
 .new{
-    background-color: blueviolet;
+    display: flex;
+    width: 100%;
+    .newContainer{
+        flex: 6;
+    }
 }
