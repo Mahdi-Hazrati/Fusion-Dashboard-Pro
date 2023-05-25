@@ -5,7 +5,7 @@ import "./table.scss"
 
 const UsersTable = ()=>{
     return (
-        <TableContainer component={Paper} className="transactionTable">
+        <TableContainer component={Paper} className="transactionTable" style={{backgroundColor:"transparent"}}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>

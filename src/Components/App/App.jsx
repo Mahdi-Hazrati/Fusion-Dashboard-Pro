@@ -10,13 +10,15 @@ import New from "../../Pages/New/New"
 // ---------------- Components ----------------
 // --------------=-- Styles -------------------
 import "./app.scss"
-import "./reset.css"
+import "../../Global/Reset.scss"
+import "../../Global/Dark_Mode.scss"
+import "../../Global/RTL_Persian.scss"
 // --------------------------------------------
 
 
 function App() {
     return (
-    <div className="app">
+    <div className="app dark rtl">
         <BrowserRouter>
             <Routes>
                <Route path="/">

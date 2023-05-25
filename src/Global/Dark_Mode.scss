@@ -1,0 +1,46 @@
+.app.dark{
+    input{
+        background-color: transparent;
+    }
+    background-color: #222;
+    *{
+        color: white;
+    }
+    .table{
+        background-color: #222;
+        color: white;
+    }
+    .navbar{
+        background-color: black;
+        color: white;
+        box-shadow: none;
+        border: none;
+        .search{
+            border: none;
+            background-color: rgba(255, 255, 255, 0.080);
+            color: white;
+        }
+    }
+    .sidebar{
+        background-color: black;
+        box-shadow: none;
+        color: white;
+        border: none;
+        li:hover{
+            background-color: rgba(255, 255, 255, 0.1);
+            
+        }
+        
+    }
+    .widget, .featured,.chart,.listContainer{
+        background-color: black;
+        color: white;
+        .left {
+            .counter{
+                color: white;
+            }
+        }
+        
+    }
+    
+}
