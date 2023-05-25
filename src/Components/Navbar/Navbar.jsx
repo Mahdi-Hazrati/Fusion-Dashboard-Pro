@@ -14,7 +14,11 @@ from "@mui/icons-material"
 import avatar from "../../Assets/Images/Avatar.jpg"
 import "./navbar.scss"
 
+import { useContext } from "react"
+import { DarkModeContext } from "../../Context/darkModeContext";
+
 const Navbar = ()=>{
+const {dispatch, darkmode} = useContext(DarkModeContext)
     return (
         <div className="navbar">
             <div className="wrapper">
@@ -27,7 +31,9 @@ const Navbar = ()=>{
                         <LanguageOutlined className="icon" />
                         English
                     </div>
-                    <div className="item">
+                    <div className="item" onClick={()=>{
+                        dispatch({type:"TOGGLE"})
+                    }}>
                         <DarkModeOutlined className="icon"/>
                     </div>
                     <div className="item">
