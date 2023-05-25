@@ -1,9 +1,8 @@
 import React, {useState} from "react"
 import Sidebar from "../../Components/Sidebar/Sidebar"
 import Navbar from "../../Components/Navbar/Navbar"
-import "./new.scss"
-import noImage from "../../Assets/Images/Avatar.jpg"
 import { DriveFolderUpload, PhotoCamera } from "@mui/icons-material"
+import "./new.scss"
 
 const New = ()=>{
     const [file, setFile] = useState("")
