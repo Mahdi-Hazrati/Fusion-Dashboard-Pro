@@ -18,7 +18,7 @@ import { useContext } from "react"
 import { DarkModeContext } from "../../Context/darkModeContext";
 
 const Navbar = ()=>{
-const {dispatch, darkmode} = useContext(DarkModeContext)
+const {dispatch} = useContext(DarkModeContext)
     return (
         <div className="navbar">
             <div className="wrapper">
