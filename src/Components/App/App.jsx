@@ -1,6 +1,7 @@
 // ----------------- React --------------------
-import React from "react";
+import React, { useContext } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { DarkModeContext } from "../../Context/darkModeContext";
 // ----------------- Pages --------------------
 import Home from "../../Pages/Home/Home";
 import Login from "../../Pages/Login/Login"
@@ -17,8 +18,10 @@ import "../../Global/RTL_Persian.scss"
 
 
 function App() {
+  const {darkmode} = useContext(DarkModeContext)
+
     return (
-    <div className="app dark rtl">
+    <div className={darkmode ? "app dark" : "app"}>
         <BrowserRouter>
             <Routes>
                <Route path="/">
