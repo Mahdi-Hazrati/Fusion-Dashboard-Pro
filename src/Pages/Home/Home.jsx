@@ -4,7 +4,6 @@ import Navbar from "../../Components/Navbar/Navbar";
 import Widget from "../../Components/Widget/Widget";
 import Featured from "../../Components/Featured/Featured"
 import Chart from "../../Components/Chart/Chart"
-import UsersTable from "../../Components/Table/Table";
 import "./home.scss"
 
 const Home = () => {
@@ -22,10 +21,6 @@ const Home = () => {
                 <div className="charts">
                     <Featured />
                     <Chart title="Last 6 month revenue" aspect={2 / 1} />
-                </div>
-                <div className="listContainer">
-                    <div className="listTitle">Latest Transaction</div>
-                    <UsersTable />
                 </div>
             </div>
         </div>

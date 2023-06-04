@@ -1,0 +1,16 @@
+.blank{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    .blankContainer{
+        flex: 6;
+        h1{
+            margin: 20px;
+            text-transform: capitalize;
+            user-select: none;
+        }
+
+
+    }
+    
+}
