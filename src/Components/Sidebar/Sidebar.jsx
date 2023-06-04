@@ -1,52 +1,52 @@
 import { Link } from "react-router-dom"
 
 import {
-    Accessibility,
-    AddShoppingCart,
-    AdsClick,
-    Analytics,
-    Assignment,
-    BrandingWatermark,
-    BugReport,
-    Build,
-    BusinessCenter,
-    CalendarMonth,
-    Campaign,
-    Category,
-    Chat,
-    Comment,
-    ContactSupport,
-    Contacts,
-    ContentPaste,
+Accessibility,
+AddShoppingCart,
+AdsClick,
+Analytics,
+Assignment,
+BarChartOutlined,
+BrandingWatermark,
+BugReport,
+Build,
+BusinessCenter,
+CalendarMonth,
+Campaign,
+Category,
+Chat,
+Comment,
+ContactSupport,
+Contacts,
+ContentPaste,
 Dashboard,
-    DashboardCustomize,
-    Description,
-    Diamond,
-    Directions,
-    Email,
-    Engineering,
-    Event,
-    EventAvailable,
-    Feedback,
-    FlashOn,
-    FlightLand,
-    Gavel,
-    GridView,
-    Group,
-    Hail,
-    Info,
-    Insights,
-    Inventory,
-    Layers,
-    ListAlt,
-    LiveHelp,
-    LocalActivity,
-    LocalOffer,
-    LocalShipping,
-    ManageAccounts,
+DashboardCustomize,
+Description,
+Diamond,
+Directions,
+Email,
+Engineering,
+Event,
+EventAvailable,
+Feedback,
+FlashOn,
+FlightLand,
+Gavel,
+GridView,
+Group,
+Hail,
+Info,
+Insights,
+Inventory,
+Layers,
+ListAlt,
+LiveHelp,
+LocalActivity,
+LocalOffer,
+LocalShipping,
+ManageAccounts,
 Menu,
 ModeComment,
-MoveDown,
 Navigation,
 NoteAdd,
 Palette,
@@ -84,7 +84,6 @@ Workspaces,
 } from "@mui/icons-material"
 
 import "./sidebar.scss"
-import { BarChart } from "recharts"
 
 const Sidebar = () => {
     return (
@@ -290,7 +289,7 @@ const Sidebar = () => {
                         <span>Resource Tracking</span>
                     </Link>
                     <Link to="/resource-reporting">
-                        <BarChart className="icon" />
+                        <BarChartOutlined className="icon" />
                         <span>Resource Reporting</span>
                     </Link>
                     <Link to="/resource-administration">
@@ -400,7 +399,7 @@ const Sidebar = () => {
                         <Storage className="icon" />
                         <span>API Integrations</span>
                     </Link>
-                    
+
                     <p className="title">Support</p>
                     <Link to="/about">
                         <Info className="icon" />
