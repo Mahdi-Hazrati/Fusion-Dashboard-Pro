@@ -26,6 +26,19 @@
         box-shadow: none;
         color: white;
         border: none;
+        .middle{
+            ul{
+                .title{
+                    color: white;
+                }
+                a{
+                    transition: 0.1s;
+                    span{
+                        color: rgba(255, 255, 255, 1);
+                    }
+                }
+            }
+        }
         a:hover{
             background-color: rgba(255, 255, 255, 0.1);
             
