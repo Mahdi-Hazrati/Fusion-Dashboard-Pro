@@ -13,7 +13,7 @@
         align-items: center;
         justify-content: center;
         gap:10px;
-        color: #6429ff;
+        color: crimson;
         font-size: 20px;
         font-weight: bold;
         user-select: none;
@@ -62,10 +62,10 @@
 
                 &:hover{
                     cursor: pointer;
-                    background-color: #ece8ff;
+                    background-color: #ffe8ec;
                 }
                 .icon{
-                    color: #7451f8;
+                    color: crimson;
                     font-size: 18px;
                 }
                 span{
