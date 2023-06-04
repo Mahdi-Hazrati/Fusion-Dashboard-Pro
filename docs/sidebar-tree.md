@@ -27,7 +27,7 @@
 │   ├── Categories
 │   ├── Brands
 │   ├── Inventory
-│   ├── Pricing and Special Offers
+│   ├── Special Offers
 │   ├── Orders
 │   ├── Shipping
 │   ├── Inventory Tracking
