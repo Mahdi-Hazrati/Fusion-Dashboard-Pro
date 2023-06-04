@@ -88,11 +88,11 @@ import "./sidebar.scss"
 const Sidebar = () => {
     return (
         <div className="sidebar">
-            <div className="top">
+            <div className="head">
                 <Dashboard />
                 <span className="logo">Fusion Pro</span>
             </div>
-            <div className="center">
+            <div className="middle">
                 <ul>
                     <p className="title">Dashboard Overview</p>
                     <Link to="/">
