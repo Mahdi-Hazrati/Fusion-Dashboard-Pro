@@ -1,10 +1,90 @@
 import { Link } from "react-router-dom"
+
 import {
+    Accessibility,
+    AddShoppingCart,
+    AdsClick,
+    Analytics,
+    Assignment,
+    BrandingWatermark,
+    BugReport,
+    Build,
+    BusinessCenter,
+    CalendarMonth,
+    Campaign,
+    Category,
+    Chat,
+    Comment,
+    ContactSupport,
+    Contacts,
+    ContentPaste,
 Dashboard,
+    DashboardCustomize,
+    Description,
+    Diamond,
+    Directions,
+    Email,
+    Engineering,
+    Event,
+    EventAvailable,
+    Feedback,
+    FlashOn,
+    FlightLand,
+    Gavel,
+    GridView,
+    Group,
+    Hail,
+    Info,
+    Insights,
+    Inventory,
+    Layers,
+    ListAlt,
+    LiveHelp,
+    LocalActivity,
+    LocalOffer,
+    LocalShipping,
+    ManageAccounts,
 Menu,
+ModeComment,
+MoveDown,
+Navigation,
+NoteAdd,
+Palette,
+Password,
+Payment,
+PermMedia,
+PersonSearch,
+PlaylistAddCheck,
+PriceChange,
+PsychologyAlt,
+QueryStats,
+QuestionAnswer,
+Receipt,
+RequestQuote,
+Schedule,
+Score,
+Security,
+SecurityUpdate,
+SelfImprovement,
+SettingsApplications,
+ShoppingBag,
+ShoppingCart,
+ShoppingCartCheckout,
+Source,
+Speed,
+Storage,
+SwapHoriz,
+Timeline,
+Today,
+TrendingUp,
+Tune,
+Update,
+ViewColumn,
+Workspaces,
 } from "@mui/icons-material"
 
 import "./sidebar.scss"
+import { BarChart } from "recharts"
 
 const Sidebar = () => {
     return (
@@ -21,328 +101,329 @@ const Sidebar = () => {
                         <span>Overview</span>
                     </Link>
                     <Link to="/navigation">
-                        <Menu className="icon" />
+                        <Directions className="icon" />
                         <span>Navigation</span>
                     </Link>
                     <Link to="/sales">
-                        <Menu className="icon" />
+                        <QueryStats className="icon" />
                         <span>Sales</span>
                     </Link>
                     <Link to="/traffic">
-                        <Menu className="icon" />
+                        <AdsClick className="icon" />
                         <span>traffic</span>
                     </Link>
                     <Link to="/user-behavior ">
-                        <Menu className="icon" />
+                        <PsychologyAlt className="icon" />
                         <span>User Behavior</span>
                     </Link>
                     <Link to="/marketing-campaigns">
-                        <Menu className="icon" />
+                        <Campaign className="icon" />
                         <span>Marketing Campaigns</span>
                     </Link>
                     <Link to="/content-performance">
-                        <Menu className="icon" />
+                        <ContentPaste className="icon" />
                         <span>Content Performance</span>
                     </Link>
                     <Link to="/tracks-customers">
-                        <Menu className="icon" />
+                        <PersonSearch className="icon" />
                         <span>Tracks Customers</span>
                     </Link>
                     <Link to="/security">
-                        <Menu className="icon" />
+                        <Security className="icon" />
                         <span>Security</span>
                     </Link>
                     <Link to="/customization">
-                        <Menu className="icon" />
+                        <DashboardCustomize className="icon" />
                         <span>Customization</span>
                     </Link>
                     <p className="title">User Management</p>
                     <Link to="/user-accounts">
-                        <Menu className="icon" />
+                        <Group className="icon" />
                         <span>User Accounts</span>
                     </Link>
                     <Link to="/user-permissions">
-                        <Menu className="icon" />
+                        <ManageAccounts className="icon" />
                         <span>User Permissions</span>
                     </Link>
                     <Link to="/password-management">
-                        <Menu className="icon" />
+                        <Password className="icon" />
                         <span>Pass Management</span>
                     </Link>
                     <Link to="/user-comments">
-                        <Menu className="icon" />
+                        <Comment className="icon" />
                         <span>User Comments</span>
                     </Link>
                     <Link to="/user-tickets ">
-                        <Menu className="icon" />
+                        <LiveHelp className="icon" />
                         <span>User Tickets </span>
                     </Link>
                     <Link to="/user-activity-logs">
-                        <Menu className="icon" />
+                        <Accessibility className="icon" />
                         <span>User Activity Logs</span>
                     </Link>
                     <Link to="/user-feedback">
-                        <Menu className="icon" />
+                        <Feedback className="icon" />
                         <span>User Feedback</span>
                     </Link>
                     <p className="title">Product Management</p>
                     <Link to="/products">
-                        <Menu className="icon" />
+                        <ShoppingCart className="icon" />
                         <span>Products</span>
                     </Link>
                     <Link to="/product-creation">
-                        <Menu className="icon" />
+                        <AddShoppingCart className="icon" />
                         <span>Product Creation</span>
                     </Link>
                     <Link to="/categories">
-                        <Menu className="icon" />
+                        <Category className="icon" />
                         <span>Categories</span>
                     </Link>
                     <Link to="/brands">
-                        <Menu className="icon" />
+                        <Diamond className="icon" />
                         <span>Brands</span>
                     </Link>
                     <Link to="/special-offers">
-                        <Menu className="icon" />
+                        <LocalOffer className="icon" />
                         <span>Special Offers</span>
                     </Link>
                     <Link to="/orders">
-                        <Menu className="icon" />
+                        <ShoppingBag className="icon" />
                         <span>Orders</span>
                     </Link>
                     <Link to="/shipping">
-                        <Menu className="icon" />
+                        <LocalShipping className="icon" />
                         <span>Shipping</span>
                     </Link>
                     <Link to="/inventory-tracking">
-                        <Menu className="icon" />
+                        <Inventory className="icon" />
                         <span>Inventory Tracking</span>
                     </Link>
                     <Link to="/taxes">
-                        <Menu className="icon" />
+                        <PriceChange className="icon" />
                         <span>Taxes</span>
                     </Link>
                     <Link to="/reviews">
-                        <Menu className="icon" />
+                        <Chat className="icon" />
                         <span>Reviews</span>
                     </Link>
                     <Link to="/product-performance">
-                        <Menu className="icon" />
+                        <ShoppingCartCheckout className="icon" />
                         <span>Product Performance</span>
                     </Link>
                     <p className="title">Content Management</p>
                     <Link to="/posts">
-                        <Menu className="icon" />
+                        <Source className="icon" />
                         <span>Posts</span>
                     </Link>
                     <Link to="/create-post">
-                        <Menu className="icon" />
+                        <NoteAdd className="icon" />
                         <span>Create Post</span>
                     </Link>
                     <Link to="/categories">
-                        <Menu className="icon" />
+                        <Category className="icon" />
                         <span>Categories</span>
                     </Link>
                     <Link to="/media-library">
-                        <Menu className="icon" />
+                        <PermMedia className="icon" />
                         <span>Media Library</span>
                     </Link>
                     <Link to="/comments-moderation">
-                        <Menu className="icon" />
+                        <ModeComment className="icon" />
                         <span>Comments</span>
                     </Link>
                     <p className="title">Analytics</p>
-                    <Link to="/Traffic Tracking">
-                        <Menu className="icon" />
+                    <Link to="/traffic-tracking">
+                        <Analytics className="icon" />
                         <span>Traffic Tracking</span>
                     </Link>
-                    <Link to="/Engagement Metrics">
-                        <Menu className="icon" />
+                    <Link to="/engagement-metrics">
+                        <Insights className="icon" />
                         <span>Engagement Metrics</span>
                     </Link>
-                    <Link to="/Conversion Rates">
-                        <Menu className="icon" />
+                    <Link to="/conversion-rates">
+                        <Score className="icon" />
                         <span>Conversion Rates</span>
                     </Link>
-                    <Link to="/Pages Behavior">
-                        <Menu className="icon" />
+                    <Link to="/pages-behavior">
+                        <Layers className="icon" />
                         <span>Pages Behavior</span>
                     </Link>
-                    <Link to="/Landing Analytics">
-                        <Menu className="icon" />
+                    <Link to="/landing-analytics">
+                        <FlightLand className="icon" />
                         <span>Landing Analytics</span>
                     </Link>
-                    <Link to="/Audience">
-                        <Menu className="icon" />
+                    <Link to="/audience">
+                        <SelfImprovement className="icon" />
                         <span>Audience</span>
                     </Link>
-                    <Link to="/Ecommerce Performance">
-                        <Menu className="icon" />
+                    <Link to="/ecommerce-performance">
+                        <RequestQuote className="icon" />
                         <span>Ecommerce Performance</span>
                     </Link>
-                    <Link to="/Events Interactions">
-                        <Menu className="icon" />
+                    <Link to="/events-interactions">
+                        <LocalActivity className="icon" />
                         <span>Events Interactions</span>
                     </Link>
-                    <Link to="/Site Speed">
-                        <Menu className="icon" />
+                    <Link to="/site-speed">
+                        <Speed className="icon" />
                         <span>Site Speed</span>
                     </Link>
-                    <Link to="/Reports">
-                        <Menu className="icon" />
+                    <Link to="/reports">
+                        <BugReport className="icon" />
                         <span>Reports</span>
                     </Link>
                     <p className="title">Resource Management</p>
                     <Link to="/resource-overview">
-                        <Menu className="icon" />
+                        <GridView className="icon" />
                         <span>Resource Overview</span>
                     </Link>
                     <Link to="/resource-allocation">
-                        <Menu className="icon" />
+                        <Assignment className="icon" />
                         <span>Resource Allocation</span>
                     </Link>
                     <Link to="/resource-planning">
-                        <Menu className="icon" />
+                        <CalendarMonth className="icon" />
                         <span>Resource Planning</span>
                     </Link>
                     <Link to="/resource-tracking">
-                        <Menu className="icon" />
+                        <Update className="icon" />
                         <span>Resource Tracking</span>
                     </Link>
                     <Link to="/resource-reporting">
-                        <Menu className="icon" />
+                        <BarChart className="icon" />
                         <span>Resource Reporting</span>
                     </Link>
                     <Link to="/resource-administration">
-                        <Menu className="icon" />
+                        <Engineering className="icon" />
                         <span>Administration</span>
                     </Link>
                     <Link to="/employees">
-                        <Menu className="icon" />
+                        <Hail className="icon" />
                         <span>Employees</span>
                     </Link>
                     <Link to="/performance">
-                        <Menu className="icon" />
+                        <TrendingUp className="icon" />
                         <span>Performance</span>
                     </Link>
                     <p className="title">Task Management</p>
                     <Link to="/quick-actions">
-                        <Menu className="icon" />
+                        <FlashOn className="icon" />
                         <span>Quick Actions</span>
                     </Link>
                     <Link to="/tasks">
-                        <Menu className="icon" />
+                        <ListAlt className="icon" />
                         <span>Tasks</span>
                     </Link>
                     <Link to="/workspaces">
-                        <Menu className="icon" />
+                        <Workspaces className="icon" />
                         <span>Workspaces</span>
                     </Link>
                     <Link to="/projects">
-                        <Menu className="icon" />
+                        <BusinessCenter className="icon" />
                         <span>Projects</span>
                     </Link>
                     <Link to="/kanban-board">
-                        <Menu className="icon" />
+                        <ViewColumn className="icon" />
                         <span>Kanban Board</span>
                     </Link>
                     <Link to="/gantt-chart">
-                        <Menu className="icon" />
+                        <Timeline className="icon" />
                         <span>Gantt Chart</span>
                     </Link>
                     <p className="title">Event Management</p>
                     <Link to="/events">
-                        <Menu className="icon" />
+                        <Event className="icon" />
                         <span>Events</span>
                     </Link>
                     <Link to="/registrations">
-                        <Menu className="icon" />
+                        <PlaylistAddCheck className="icon" />
                         <span>Registrations</span>
                     </Link>
                     <Link to="/calendar">
-                        <Menu className="icon" />
+                        <Today className="icon" />
                         <span>Calendar</span>
                     </Link>
                     <Link to="/contacts">
-                        <Menu className="icon" />
+                        <Contacts className="icon" />
                         <span>Contacts</span>
                     </Link>
                     <Link to="/scheduling-event">
-                        <Menu className="icon" />
+                        <Schedule className="icon" />
                         <span>Scheduling Event</span>
                     </Link>
                     <Link to="/event-Management">
-                        <Menu className="icon" />
+                        <EventAvailable className="icon" />
                         <span>Event Management</span>
                     </Link>
                     <p className="title">Settings</p>
                     <Link to="/general">
-                        <Menu className="icon" />
+                        <SettingsApplications className="icon" />
                         <span>General</span>
                     </Link>
                     <Link to="/integration">
-                        <Menu className="icon" />
+                        <SwapHoriz className="icon" />
                         <span>Integration</span>
                     </Link>
                     <Link to="/email">
-                        <Menu className="icon" />
+                        <Email className="icon" />
                         <span>Email</span>
                     </Link>
                     <Link to="/preferences">
-                        <Menu className="icon" />
+                        <Tune className="icon" />
                         <span>Preferences</span>
                     </Link>
                     <Link to="/appearance">
-                        <Menu className="icon" />
+                        <Palette className="icon" />
                         <span>Appearance</span>
                     </Link>
                     <Link to="/navigation">
-                        <Menu className="icon" />
+                        <Navigation className="icon" />
                         <span>Navigation</span>
                     </Link>
                     <Link to="/advanced-settings">
-                        <Menu className="icon" />
+                        <Build className="icon" />
                         <span>Advanced Settings</span>
                     </Link>
                     <Link to="/branding-setting">
-                        <Menu className="icon" />
+                        <BrandingWatermark className="icon" />
                         <span>Branding Setting</span>
                     </Link>
                     <Link to="/payment-processing">
-                        <Menu className="icon" />
+                        <Payment className="icon" />
                         <span>Payment Processing</span>
                     </Link>
                     <Link to="/configures-security">
-                        <Menu className="icon" />
+                        <SecurityUpdate className="icon" />
                         <span>Configures Security</span>
                     </Link>
                     <Link to="/api-integrations">
-                        <Menu className="icon" />
+                        <Storage className="icon" />
                         <span>API Integrations</span>
                     </Link>
+                    
                     <p className="title">Support</p>
                     <Link to="/about">
-                        <Menu className="icon" />
+                        <Info className="icon" />
                         <span>About</span>
                     </Link>
                     <Link to="/ticket">
-                        <Menu className="icon" />
+                        <Receipt className="icon" />
                         <span>Ticket</span>
                     </Link>
                     <Link to="/documentation">
-                        <Menu className="icon" />
+                        <Description className="icon" />
                         <span>Documentation</span>
                     </Link>
                     <Link to="/legal">
-                        <Menu className="icon" />
+                        <Gavel className="icon" />
                         <span>Legal</span>
                     </Link>
                     <Link to="/faqs">
-                        <Menu className="icon" />
+                        <QuestionAnswer className="icon" />
                         <span>FAQs</span>
                     </Link>
                     <Link to="/help">
-                        <Menu className="icon" />
+                        <ContactSupport className="icon" />
                         <span>Help</span>
                     </Link>
                 </ul>
