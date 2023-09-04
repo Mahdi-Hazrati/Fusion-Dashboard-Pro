@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.91759bac.css",
-    "main.js": "/static/js/main.15306db9.js",
-    "static/media/Avatar.jpg": "/static/media/Avatar.21b7a74a1baba07ecaed.jpg",
-    "static/media/Nunito-Medium.ttf": "/static/media/Nunito-Medium.5ab61e2164ab860dac48.ttf",
-    "index.html": "/index.html",
-    "main.91759bac.css.map": "/static/css/main.91759bac.css.map",
-    "main.15306db9.js.map": "/static/js/main.15306db9.js.map"
+    "main.css": "/Fusion-Dashboard-Pro/static/css/main.7f5b96c4.css",
+    "main.js": "/Fusion-Dashboard-Pro/static/js/main.dc098ec9.js",
+    "static/media/Avatar.jpg": "/Fusion-Dashboard-Pro/static/media/Avatar.21b7a74a1baba07ecaed.jpg",
+    "static/media/Nunito-Medium.ttf": "/Fusion-Dashboard-Pro/static/media/Nunito-Medium.5ab61e2164ab860dac48.ttf",
+    "index.html": "/Fusion-Dashboard-Pro/index.html",
+    "main.7f5b96c4.css.map": "/Fusion-Dashboard-Pro/static/css/main.7f5b96c4.css.map",
+    "main.dc098ec9.js.map": "/Fusion-Dashboard-Pro/static/js/main.dc098ec9.js.map"
   },
   "entrypoints": [
-    "static/css/main.91759bac.css",
-    "static/js/main.15306db9.js"
+    "static/css/main.7f5b96c4.css",
+    "static/js/main.dc098ec9.js"
   ]
 }
