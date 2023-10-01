@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Fusion-Dashboard-Pro/static/css/main.7f5b96c4.css",
-    "main.js": "/Fusion-Dashboard-Pro/static/js/main.dc098ec9.js",
+    "main.js": "/Fusion-Dashboard-Pro/static/js/main.d3f48870.js",
     "static/media/Avatar.jpg": "/Fusion-Dashboard-Pro/static/media/Avatar.21b7a74a1baba07ecaed.jpg",
     "static/media/Nunito-Medium.ttf": "/Fusion-Dashboard-Pro/static/media/Nunito-Medium.5ab61e2164ab860dac48.ttf",
     "index.html": "/Fusion-Dashboard-Pro/index.html",
     "main.7f5b96c4.css.map": "/Fusion-Dashboard-Pro/static/css/main.7f5b96c4.css.map",
-    "main.dc098ec9.js.map": "/Fusion-Dashboard-Pro/static/js/main.dc098ec9.js.map"
+    "main.d3f48870.js.map": "/Fusion-Dashboard-Pro/static/js/main.d3f48870.js.map"
   },
   "entrypoints": [
     "static/css/main.7f5b96c4.css",
-    "static/js/main.dc098ec9.js"
+    "static/js/main.d3f48870.js"
   ]
 }
