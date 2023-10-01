@@ -1,6 +1,6 @@
 // ----------------- React --------------------
 import React, { useContext } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { DarkModeContext } from "../../Context/darkModeContext";
 // ----------------- Pages --------------------
 import Home from "../../Pages/Home/Home";
@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className={darkmode ? "app dark" : "app"}>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/">
             <Route index element={<Home />} />
@@ -126,7 +126,7 @@ function App() {
 
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
